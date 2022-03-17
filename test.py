@@ -21,7 +21,7 @@ def function_that_measures_script_performance(func,arg,how_many_times=2):
 
 print(function_that_measures_script_performance(sum_all_of_the_numbers,5000,3))
 print(function_that_measures_script_performance(sum_all_of_the_numbers,10000))
-print(function_that_measures_script_performance(sum_all_of_the_numbers,2500))
+print(function_that_measures_script_performance(sum_all_of_the_numbers,25000))
 print(function_that_measures_script_performance(sum_all_of_the_numbers,20000))
 
 
