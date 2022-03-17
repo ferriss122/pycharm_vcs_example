@@ -7,6 +7,6 @@ def print_hi(name):
 # Press the green button in the gutter to run the script.
 if __name__ == '__main__':
     print_hi('Kamil')
-    print('How are you?')
-    print('Do you like me?')
+    print('How are you doing?')
+    print('Do you like me or not?')
 
