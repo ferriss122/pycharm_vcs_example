@@ -1,3 +1,6 @@
+import time
+
+
 def function_that_checks_if_element_is_in_a_list(list):
     element = int(input('For what  are you looking for in this list? Which number?'))
     if element in list:
@@ -25,4 +28,14 @@ def function_that_creates_list_or_a_set():
     else:
         print('Something went wrong ! Maybe you typed incorrect answer!')
 
-function_that_creates_list_or_a_set()
+def function_performance(func,how_many_times=0):
+    sum = 0
+    for i in range(0,how_many_times):
+        start = time.perf_counter()
+        func()
+        end = time.perf_counter()
+        sum = sum + (end-start)
+
+    return sum
+
+print(function_performance(function_that_creates_list_or_a_set,4))
