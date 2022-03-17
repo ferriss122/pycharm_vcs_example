@@ -16,3 +16,5 @@ if __name__ == '__main__':
 
     print(my_function(2,4))
 
+    x = 3
+
