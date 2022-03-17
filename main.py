@@ -8,4 +8,5 @@ def print_hi(name):
 if __name__ == '__main__':
     print_hi('Kamil')
     print('How are you?')
+    print('Do you like me?')
 
