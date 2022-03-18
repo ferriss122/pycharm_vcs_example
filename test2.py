@@ -1,34 +1,38 @@
 import time
 
 
-def function_that_checks_if_element_is_in_a_list(list):
+def function_1(list):
+    """Function that checks if element is in the list."""
     element = int(input('For what  are you looking for in this list? Which number?'))
     if element in list:
         return True
     else:
         return False
 
-def function_that_checks_if_element_is_in_a_set(set):
+def function_2(set):
+    """Function that checks if element is in the set."""
     element = int(input('For what  are you looking for in this list? Which number?'))
     if element in set:
         return True
     else:
         return False
 
-def function_that_creates_list_or_a_set():
+def function_3():
+    """Function that creates list or a set."""
     question = input('What do you want to create : list or a set?')
     if question == 'l':
         list_from_1_to_100 = [i for i in range(1,100)]
-        print(function_that_checks_if_element_is_in_a_list(list_from_1_to_100))
+        print(function_1(list_from_1_to_100))
         return list_from_1_to_100
     elif question == 's':
         set_from_1_to_100  = {i for i in range(1,100)}
-        print(function_that_checks_if_element_is_in_a_set(set_from_1_to_100))
+        print(function_2(set_from_1_to_100))
         return set_from_1_to_100
     else:
         print('Something went wrong ! Maybe you typed incorrect answer!')
 
-def function_performance(func,how_many_times=0):
+def function_4(func,how_many_times=0):
+    """Function that measures performance of the script."""
     sum = 0
     for i in range(0,how_many_times):
         start = time.perf_counter()
@@ -38,4 +42,4 @@ def function_performance(func,how_many_times=0):
 
     return sum
 
-print(function_performance(function_that_creates_list_or_a_set,4))
+print(function_4(function_3(),4))
