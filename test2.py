@@ -2,7 +2,7 @@ import time
 
 
 def function_1(list):
-    """Function that checks if element is in the list."""
+    """Function that checks if the element is in the list."""
     element = int(input('For what  are you looking for in this list? Which number?'))
     if element in list:
         return True
@@ -10,7 +10,7 @@ def function_1(list):
         return False
 
 def function_2(set):
-    """Function that checks if element is in the set."""
+    """Function that checks if  the element is in the set."""
     element = int(input('For what  are you looking for in this list? Which number?'))
     if element in set:
         return True
