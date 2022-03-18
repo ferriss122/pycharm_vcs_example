@@ -31,7 +31,7 @@ def function_3():
     else:
         print('Something went wrong ! Maybe you typed incorrect answer!')
 
-def function_4(func,how_many_times=0):
+def function_number_4(func,how_many_times=0):
     """Function that measures performance of the script."""
     sum = 0
     for i in range(0,how_many_times):
@@ -42,4 +42,4 @@ def function_4(func,how_many_times=0):
 
     return sum
 
-print(function_4(function_3(),4))
+print(function_number_4(function_3,how_many_times=5))
