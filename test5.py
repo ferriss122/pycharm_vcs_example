@@ -10,7 +10,7 @@ def symulation_of_lotto(amount=6,total_amount=49):
         else:
             list_for_numbers.append(random_number)
             continue
-    for element in list_for_numbers:
-        print(element)
+    for number in list_for_numbers:
+        print(number)
 
 symulation_of_lotto()
