@@ -1,22 +1,9 @@
-import time
+import random
 
-def function_1(number):
-    """Function that sums numbers from 1 to number defined by user."""
-    sum = 0
-    for number in range(1,number+1):
-        sum = sum + number
+steps = 5
 
-    return sum
-
-print(function_1(5))
-print(function_1(10))
-
-def function_2(func,arg):
-    """Function that measures time performance of the script."""
-    start = time.perf_counter()
-    func(arg)
-    end = time.perf_counter()
-    return end - start
-
-print(function_2(function_1,5))
-print(function_2(function_1,10))
+chest = ['green','orange','purple','legendary']
+nothing_or_chest = ['nothing','chest']
+percent_radio_for_chest = random.choices(chest,[75,20,4,1],k=1)
+percent_radio_for_nothing_or_chest = random.choices(nothing_or_chest,[40,60],k=1)
+print(percent_radio_for_chest)
