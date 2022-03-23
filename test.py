@@ -29,7 +29,7 @@ def function_3(func,how_many_times=1,*arg):
     return sum
 
 print(function_3(function_1,10,500,list_from_1_to_100))
-print(function_3(function_2,100,5000,set_from_1_to_100))
+print(function_3(function_2,100,50000,set_from_1_to_100))
 print(function_2(10))
 print(function_1(100))
 
