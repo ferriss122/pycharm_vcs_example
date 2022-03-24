@@ -9,7 +9,7 @@ def function_1(number):
     return sum
 
 print(function_1(5))
-print(function_1(10))
+print(function_1(11))
 
 def function_2(func,arg):
     """Function that measures time performance of the script."""
@@ -19,4 +19,4 @@ def function_2(func,arg):
     return end - start
 
 print(function_2(function_1,5))
-print(function_2(function_1,10))
+print(function_2(function_1,11))
